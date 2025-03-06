@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Regular.woff"), url("../fonts/Raleway-Bold.woff"),
+    url("../fonts/Raleway-Italic.woff") format("webopenfontformat");
+  src: url("../fonts/Raleway-Regular.ttf"), url("../fonts/Raleway-Bold.ttf"),
+    url("../fonts/Raleway-Italic.ttf") format("truetype");
+  src: url("../fonts/Raleway-Regular.otf"), url("../fonts/Raleway-Bold.otf"),
+    url("../fonts/Raleway-Italic.otf") format("opentype");
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", serif; /*la police serif est ajoutée en alternative à Raleway*/
+  font-size: 1rem;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0;
+  background-color: rgb(245, 245, 245);
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+}
+
+header {
+  color: #ffffff;
+  background-color: #17abb3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 90px;
+  padding-right: 250px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+  margin: 5px;
+  font-size: 2rem;
+}
+
+header h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-family: "Lato", sans-serif; /*de la même façon, sans-serif est ajoutée en alternative à Lato*/
+  font-size: 1.5rem;
+  color: #17abb3;
+}
+
+.photo-profil img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #ffffff;
+  cursor: zoom-in;
+  object-fit: cover;
+}
+
+header span {
+  font-style: normal;
+  font-size: 1rem;
+}
+
+#infospersos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#liensinfos {
+  display: flex;
+  gap: 30px;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+}
+
+.bloc1 {
+  background-color: #e3e3e3;
+  width: 350px;
+  padding: 20px;
+}
+
+.bloc1 section {
+  padding: 20px;
+}
+
+.star {
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.full {
+  color: #17abb3;
+}
+
+.empty {
+  color: #e3e3e3;
+  -webkit-text-stroke: 1px #17abb3;
+}
+
+.skill-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skill-title {
+  font-size: 0.8rem;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.language-name {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  font-size: 0.8rem;
+}
+
+ul {
+  list-style-type: square;
+  padding: 15px;
+}
+
+ul li::marker {
+  color: #17abb3;
+  font-size: 1.5rem;
+}
+
+li {
+  padding: 5px;
+}
+
+strong {
+  font-size: 0.9rem;
+}
+
+.bloc2 {
+  flex-basis: 900px;
+  padding: 40px;
+}
+
+#texte1,
+#texte2 {
+  text-indent: 20px;
+  text-align: justify;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.formations-item,
+.stages-item,
+.pro-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.date {
+  color: #17abb3;
+}
+
+span {
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.formations-item:hover,
+.stages-item:hover,
+.pro-item:hover {
+  background-color: #e3e3e3;
+  border-left: 4px solid #17abb3;
+}
+
+footer {
+  background-color: #17abb3;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#social {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+footer span {
+  color: #ffffff;
+}
+
+#social :hover {
+  opacity: 0.7;
+}
